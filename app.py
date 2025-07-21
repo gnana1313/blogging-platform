@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'your-secret-key-here')
 
 # MongoDB connection
-client = MongoClient(os.getenv('MONGODB_URI', 'mongodb://localhost:27017/'))
+client = MongoClient(os.getenv('MONGODB_URI', 'mongodb+srv://arjun:arjun123@blog.dcjsvwf.mongodb.net/?retryWrites=true&w=majority&appName=Blog'))
 db = client['blogging_platform']
 users_collection = db['users']
 blogs_collection = db['blogs']
